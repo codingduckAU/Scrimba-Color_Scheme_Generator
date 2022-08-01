@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(25,25,25);
+    font-family: Inter;
+}
+
+
+
+/*------------- INSTRUCTIONS -------------*/
+
+.instructions-wrapper {
+    background-color: white;
+}
+
+span {
+    padding-left: 1rem;
+    font-size: 0.7rem;
+    font-weight: 400;
+}
+
+summary {
+    padding-left: 1em;
+    cursor: pointer;
+}
+
+.top-text {
+    padding-top: 0.6rem;
+    padding-left: 2em;
+    color: black;
+    line-height: 1.6;
+}
+
+/*------------- MAIN -------------*/
+
+main {
+    max-width: 550px;
+    height: 550px;
+    margin: 20px auto;
+    background-color: #1F2937;
+    border-radius: 4px;
+}
+
+
+/*--------------- TOP NAV --------------*/
+
+
+nav {
+    height: 90px;
+    /* border: 1px red solid; */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.color-picker {
+    width: 51px;
+    height: 34px;
+    cursor: pointer;
+}
+
+.surround {
+    width: 312px; 
+    /* border: 1px solid green; */
+}
+
+select {
+    width: 100%;
+    max-width: 100%;
+    height: 42px;
+    border-radius: 7px;
+    background-color: #1F293A;
+    color: #D5D4D8;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 8px;
+    cursor: pointer;
+}
+
+button {
+    width: 123px;
+    height: 42px;
+    background-color: #3D4B60;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+
+/*----------- MIDDLE COLOURS -------------- */
+
+article {
+    width: 100%;
+    height: 414px;
+    /* border: 1px green solid; */
+    
+    display: flex;
+    justify-content: space-evenly;
+}    
+
+/* .color-boxes {
+} */
+
+.col1,
+.col2,
+.col3,
+.col4,
+.col5 {
+    width: 100%;
+    height: 100%;
+}
+
+.col1 {
+    background-color: red;
+}
+
+.col2 {
+    background-color: brown;
+}
+
+.col3 {
+    background-color: yellow;
+}
+
+.col4 {
+    background-color: green;
+}
+
+.col5 {
+    background-color: purple;
+}
+
+
+
+/*----------- FOOTER AREA -------------- */
+
+footer {
+    /* border: 1px red solid; */
+    height: 46px;
+    width: 100%;
+
+    display: flex;
+    color: #D5D4D8;
+    font-size: 12px;
+    font-weight: 500;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.text1,
+.text2,
+.text3,
+.text4,
+.text5 {
+    width: 100%;
+    padding: 14px 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+/*----------- CLIPBOARD DIV -------------- */
+
+.animate-wrapper {
+    border: 1px red solid;
+    width: 550px;
+    
+    position: fixed;
+    bottom: -60px;
+    margin-left: 50vw;                  /* margin: 0 auto; dosn't work */
+    transform: translate(-50%, 0);      /* margin-left moves 50%, this will - the div size */
+    -webkit-transform: translate(-50%, 0);
+    -webkit-transform: -webkit-translate(-50%, 0);
+}
+
+h4 {
+    color: black;
+    background-color: rgba(192, 192, 192, 0.6);
+    border: 2px dotted grey;
+    width: 200px;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.special-code-h4 {     /*--- Not active until added by JS, to h4 ---*/
+    transition-duration: 1000ms;
+        -webkit-transition-duration: 1000ms;
+        -ms-transition-duration: 1000ms;
+        -o-transition-duration: 1000ms;
+        -moz-transition-duration: 1000ms;
+    transition-property: transform;
+        -webkit-transition-property: transform;
+            -webkit-transition-property: -webkit-transform;
+        -ms-transition-property: transform;
+        -o-transition-property: transform;
+        -moz-transition-property: transform;
+    transition-timing-function: cubic-bezier(0.00, 1.00, 1, 0.00);
+        -webkit-transition-timing-function: cubic-bezier(0.00, 1.00, 1, 0.00);
+        -ms-transition-timing-function: cubic-bezier(0.00, 1.00, 1, 0.00);
+        -o-transition-timing-function: cubic-bezier(0.00, 1.00, 1, 0.00);
+        -moz-transition-timing-function: cubic-bezier(0.00, 1.00, 1, 0.00);
+    transform: rotate(-180deg);
+        -webkit-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+        -o-transform: rotate(-180deg);
+        -moz-transform: rotate(-180deg);
+}
+
+.special-code-animate {     /*--- Not active until added by JS, to class=animate ---*/
+    transition-duration: 1000ms;
+        -webkit-transition-duration: 1000ms;
+        -ms-transition-duration: 1000ms;
+        -o-transition-duration: 1000ms;
+        -moz-transition-duration: 1000ms;
+    transition-property: transform;
+        -webkit-transition-property: transform;
+            -webkit-transition-property: -webkit-transform;
+        -ms-transition-property: transform;
+        -o-transition-property: transform;
+        -moz-transition-property: transform;
+    transition-timing-function: cubic-bezier(0.00, 1.00, 1, 0.00);
+        -webkit-transition-timing-function: cubic-bezier(0.00, 1.00, 1, 0.00);
+        -ms-transition-timing-function: cubic-bezier(0.00, 1.00, 1, 0.00);
+        -o-transition-timing-function: cubic-bezier(0.00, 1.00, 1, 0.00);
+        -moz-transition-timing-function: cubic-bezier(0.00, 1.00, 1, 0.00);
+    transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+}
+
+
+/*------------ SCREEN RES (for debugging mobile) ----------------- */
+
+p {
+    padding-left: 10px;
+    color: white;
+}
